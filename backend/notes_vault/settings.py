@@ -126,7 +126,8 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-FIELD_ENCRYPTION_KEY = 'w8bnl379AAjEI0bm__yj7fzex4R8IdmjGrxW3LME1_U='
+import os
+FIELD_ENCRYPTION_KEY = os.environ.get('FIELD_ENCRYPTION_KEY')  # Default for local
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
