@@ -1,0 +1,19 @@
+python -m venv venv         #create
+venv\Scripts\activate       #activate
+
+# Install Django and Django Rest Framework:
+pip install django djangorestframework
+
+# Create Django project
+django-admin startproject notes_vault .
+
+python manage.py startapp notes     #Notes app
+
+#Install Encryption Library to encrypt notes content
+pip install django-encrypted-model-fields
+
+#JWT Library
+pip install djangorestframework-simplejwt
+
+# CORS for Local Development
+pip install django-cors-headers

@@ -21,7 +21,7 @@ class NoteViewSet(viewsets.ModelViewSet):
     permission_classes = [IsAuthenticated]
 
     def get_queryset(self):
-        return Note.objects.filter(user=self.request.user, expires_at__gt=timezone.now())
+        return Note.objects.filter(user=self.request.user).order_by('expires_at')
 
     def perform_create(self, serializer):
         serializer.save(user=self.request.user)
