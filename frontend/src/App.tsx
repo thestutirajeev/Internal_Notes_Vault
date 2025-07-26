@@ -20,7 +20,6 @@ const App: React.FC = () => {
   const handleLogout = () => {
     setToken(null);
     localStorage.removeItem('token');
-    localStorage.removeItem('role'); 
     window.location.href = '/'; // Redirect to login page on logout
   };
 
