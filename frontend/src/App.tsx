@@ -7,7 +7,7 @@ import Signup from './components/Signup';
 import './App.css';
 
 const App: React.FC = () => {
-  const [token, setToken] = useState<string | null>(localStorage.getItem('token'));
+  const [token, setToken] = useState<string | null>();
 
   useEffect(() => {
     const handleStorageChange = () => {
