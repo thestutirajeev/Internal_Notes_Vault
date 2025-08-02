@@ -39,8 +39,7 @@ A simple note-taking application with user authentication and encrypted notes.
 ## Usage
 
 - **User Side**: Access the app at [http://localhost:5173/](http://localhost:5173/)
-  - Test Username: `user2`
-  - Password: `Stuti@123`
+  
 - **Admin Panel**: Access at [http://localhost:8000/admin](http://localhost:8000/admin)
   - Username: `stutirajeev`
   - Password: `admin`
